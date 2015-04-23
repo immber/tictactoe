@@ -6,6 +6,10 @@ The catch is that you can't win, just go ahead and try...
 
 Here's the logic that's going on in the code:
 
+1. if computer has < 15 and the computer's # - 15 is available, go there.
+2. if the player has < 15 and their # - 15 is available go there to block
+3. if 
+
 1. Computer goes first, choosing either the center or one of 4 corners. The GameType = either CENTER or CORNER
 2. User goes, selecting any available spot. 
 	(error pops up if a spot is already taken)
