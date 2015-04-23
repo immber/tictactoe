@@ -3,29 +3,14 @@
 This is a basic web application, that allows you to play tic-tac-toe. 
 The catch is that you can't win, just go ahead and try...
 
-
-Here's the logic that's going on in the code:
-
-1. if computer has < 15 and the computer's # - 15 is available, go there.
-2. if the player has < 15 and their # - 15 is available go there to block
-3. if 
-
-1. Computer goes first, choosing either the center or one of 4 corners. The GameType = either CENTER or CORNER
-2. User goes, selecting any available spot. 
-	(error pops up if a spot is already taken)
-3. Computer make next move based on user's go
-	If CENTER was first:
-		If user picked EDGE (mid position not a corner)
-			computer picks corner on oppisite side
-		If user picked CORNER 
-			computer picks oppisite diagonal corner
-
-		Next turn = 
-		If user picks
+You can play the game online here: http://immber.github.io/tictactoe.html
 
 
-	If CORNER was first:
+##Here's the logic that's going on in the code:
 
-		pick oppisite row or column corner
+1. First the game has to go first, and play in a corner or the center; otherwise it won't be guaranteed to win. 
+2. Any time the player goes, the game picks the next best place to place an x. First it checks to see if it can win straight away, and if not, it will try to block a win by player O.
+3. It's possible to tie, but not for player O to win, since they will always be blocked, and X has the advantage of going first.
+
 
 
